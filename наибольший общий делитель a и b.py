@@ -5,7 +5,7 @@ def gcd(a, b):
         a, b = b, a % b                       
     return a            
 
-a = 28
+a = 24
 b = 36
 
 print (gcd(a, b))
