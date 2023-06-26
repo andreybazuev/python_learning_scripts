@@ -6,7 +6,7 @@ def find(word, letter):
     print ('Длина слова в символах:', len(word))
     while index < len(word):
         if word[index] == letter:
-            print('буква встречается в индексе:', index)
+            print('символ встречается по индексу:', index)
         index += 1
 
 
