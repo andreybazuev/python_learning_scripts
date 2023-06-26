@@ -8,7 +8,7 @@ def password_find (password):
     iterations = 0
     while password != str(attempt): #в строку, если attempt - число. Или рандом:
         #attempt = ''.join(random.choice(characters) for i in range(length))
-        attempt += 1 #тупой перебор или рандом выше
+        attempt += 1 #простой перебор. или рандом выше
         iterations += 1 
     return iterations
 
