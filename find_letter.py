@@ -4,6 +4,6 @@ def find(word, letter, ix): # ix - с какого индекса начинат
         if word[index] == letter:
             return index
         index = index + 1
-    return "---The letter is not in the word"
+    return ">>>The letter is not in the word!"
 
 print(find('abcdefg', 'd', 4))
