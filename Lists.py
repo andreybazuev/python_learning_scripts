@@ -5,7 +5,7 @@ def double_list(t):
         t[i] = t[i] * 2
     return t
 
-#складывает все числа списка и выводит результат
+#складывает все числа списка и выводит результат или встроенную функ. sum(t)
 def add_all(t):
     total = 0
     for x in t:
@@ -17,6 +17,28 @@ def sort(t):
     t.sort()
     return t
 
+#Меняет первые буквы элементов списка на прописные
+def capitalize_all(t):
+    res = []
+    for s in t:
+        res.append(s.capitalize())
+    return res
 
-t = [42, 123, 15]
-print(sort(t))
+#Возвращает элементы списка если они содержат только прописные буквы
+def only_upper(t):
+    res = []
+    for s in t:
+        if s.isupper():
+            res.append(s)
+    return res
+
+#Удаляем элементы списка
+def del_elems(t):
+    x = t.pop(1) #метод pop возвращает удаляемый элемент
+    del t[2]     #инструкция del только удаляет
+    return t, x
+
+
+
+t = ['Fc', 'ZE', 'we', 'yG']
+print(del_elems(t))
