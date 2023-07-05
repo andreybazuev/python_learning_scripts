@@ -16,6 +16,13 @@ def strd_to_list(s):
 
 
 s = 'тоска/по/фьордам'
-print(strd_to_list(s))
+t = strd_to_list(s)
+print(t)
+
+#метод join() обьединяет список в строку. Вызывается для 
+# разделителя и принимает список в качестве параметра.
+delimiter = '@'
+print (delimiter.join(t)) 
+
 
 
