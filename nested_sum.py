@@ -15,8 +15,19 @@ def cumsum(t):
         csl.append(sum)
     return csl
 
+#возвращает исходный список кроме первого и последнего элементов
+def midle(t):
+    return t[1:-1]
+
+#проверяет. отсортирован ли список
+def is_sorted(t):
+    t2 = sorted(t)
+    if t == t2:
+        return True
+    else:
+        return False
 
 t = [1, 2, 3, 4, 5]  
 
-print (cumsum(t))
+print (is_sorted(t))
 
