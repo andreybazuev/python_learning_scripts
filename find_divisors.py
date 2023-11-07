@@ -1,3 +1,4 @@
+#поиск делителей заданного числа
 def find_divisors(num):
     divisors = []
     for i in range(1, num+1):

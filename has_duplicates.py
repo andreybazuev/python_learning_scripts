@@ -11,7 +11,7 @@ def has_duplicates(list1):
             n = i
     return False
 
-list1 = ['a', 'f', 's', 'w', 'b']
+list1 = ['a', 'f', 's', 'w', 'a']
 print(has_duplicates(list1))
 
 

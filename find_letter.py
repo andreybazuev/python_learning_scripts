@@ -1,3 +1,5 @@
+#поиск индекса заданной буквы в слове
+
 def find(word, letter, ix): # ix - с какого индекса начинать поиск!
     index = ix
     while index < len(word):
@@ -6,4 +8,4 @@ def find(word, letter, ix): # ix - с какого индекса начинат
         index = index + 1
     return ">>>The letter is not in the word!"
 
-print(find('abcdefg', 'd', 4))
+print(find('abcdefg', 'd', 0))
